@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>IMG_1686_57x57.jpg</string>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>com.forevorware.pictureviewer</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -27,7 +27,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchImageFile~iphone</key>
-	<string>IMG_1686.jpg</string>
+	<string></string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
