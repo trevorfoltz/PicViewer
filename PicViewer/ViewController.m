@@ -95,15 +95,20 @@
 - (void)loadImageCacheFromLibrary
 {
     if ([self.imgURLs count] == 0) {
+        for (int i = 0; i < [self.imgNamesList count]; i++) {
+            UIImage *img0 = [UIImage imageWithContentsOfFile:[self.imgNamesList objectAtIndex:i]];
+            [self.imgCache addObject:img0];
+        }
         return;
     }
     __block CGImageRef retImg = nil;
-    
+    [TestFlight passCheckpoint:@"Have URLs"];
     ALAssetsLibrary *theLibrary = [[ALAssetsLibrary alloc] init];
     ALAssetsLibraryAssetForURLResultBlock resultsBlock = ^(ALAsset *asset) {
         ALAssetRepresentation *representation = [asset defaultRepresentation];
         UIImage *img1 = [UIImage imageWithCGImage:[representation fullScreenImage]];
         if (img1.size.width < img1.size.height && representation.orientation == ALAssetOrientationUp) {
+            
             [self.imgCache addObject:img1];
  
         }
@@ -186,8 +191,9 @@
 
 - (CGImageRef)getNextImageFromCache
 {
-    UIImage *img = [self.imgCache objectAtIndex:0];
     [self.imgCache removeObjectAtIndex:0];
+    UIImage *img = (UIImage *)[self.imgCache objectAtIndex:0];
+
     if ([self.imgCache count] < 3) {
         [self loadImageCacheFromLibrary];
     }
@@ -205,7 +211,8 @@
     }
     
     CGImageRef imgRef = nil;
-    if (self.imgURLs != nil && [self.imgURLs count] > 0) {
+    if ([self.imgCache count] > 0) {
+//        [TestFlight passCheckpoint:@"Have URLs & Cache"];
         imgRef = [self getNextImageFromCache];
     }
     else {
@@ -379,7 +386,7 @@
 
 - (void)getAllImageNames
 {
-    for (int i = 1006; i<2353; i++) {
+    for (int i = 1786; i < 1791; i++) {
         NSString *imgStr = [NSString stringWithFormat:@"IMG_%d.jpg", i];
         NSString *path = [[NSBundle mainBundle] pathForResource:imgStr ofType:nil];
         if (path) {
@@ -451,7 +458,7 @@
                              NSLog(@"No groups");
                          }];
     [self.currentImg performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:5.0];
-    NSTimer *dickTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(loadImageCacheFromLibrary:) userInfo:nil repeats:NO];
+    NSTimer *dickTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(loadImageCacheFromLibrary) userInfo:nil repeats:NO];
     self.slideshowTimer = [NSTimer scheduledTimerWithTimeInterval:9.0 target:self selector:@selector(showNextImg:) userInfo:nil repeats:NO];
 }
 

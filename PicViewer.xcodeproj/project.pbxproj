@@ -10,6 +10,10 @@
 		D0B1716515E9374000C9F774 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B1716415E9374000C9F774 /* AssetsLibrary.framework */; };
 		D0B1716815E93BC200C9F774 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B1716715E93BC200C9F774 /* AVFoundation.framework */; };
 		D0B3B8C415FE53E700A079F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B3B8C315FE53E700A079F3 /* QuartzCore.framework */; };
+		D0F19BB0161145160042FE50 /* IMG_1786.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F19BAB161145160042FE50 /* IMG_1786.jpg */; };
+		D0F19BB8161221DC0042FE50 /* IMG_1788.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F19BB5161221DB0042FE50 /* IMG_1788.jpg */; };
+		D0F19BB9161221DC0042FE50 /* IMG_1789.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F19BB6161221DB0042FE50 /* IMG_1789.jpg */; };
+		D0F19BBA161221DC0042FE50 /* IMG_1790.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0F19BB7161221DC0042FE50 /* IMG_1790.jpg */; };
 		D0FA9B2F15DADB8800D2B54C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FA9B2E15DADB8800D2B54C /* UIKit.framework */; };
 		D0FA9B3115DADB8800D2B54C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FA9B3015DADB8800D2B54C /* Foundation.framework */; };
 		D0FA9B3315DADB8800D2B54C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FA9B3215DADB8800D2B54C /* CoreGraphics.framework */; };
@@ -28,6 +32,10 @@
 		D0B1716415E9374000C9F774 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		D0B1716715E93BC200C9F774 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D0B3B8C315FE53E700A079F3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D0F19BAB161145160042FE50 /* IMG_1786.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1786.jpg; sourceTree = "<group>"; };
+		D0F19BB5161221DB0042FE50 /* IMG_1788.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1788.jpg; sourceTree = "<group>"; };
+		D0F19BB6161221DB0042FE50 /* IMG_1789.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1789.jpg; sourceTree = "<group>"; };
+		D0F19BB7161221DC0042FE50 /* IMG_1790.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_1790.jpg; sourceTree = "<group>"; };
 		D0FA9B2A15DADB8800D2B54C /* PicViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FA9B2E15DADB8800D2B54C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D0FA9B3015DADB8800D2B54C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +135,10 @@
 		D0FA9B4B15DADBF300D2B54C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D0F19BAB161145160042FE50 /* IMG_1786.jpg */,
+				D0F19BB5161221DB0042FE50 /* IMG_1788.jpg */,
+				D0F19BB6161221DB0042FE50 /* IMG_1789.jpg */,
+				D0F19BB7161221DC0042FE50 /* IMG_1790.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -197,6 +209,10 @@
 				D0FA9B4515DADB8800D2B54C /* ViewController.xib in Resources */,
 				D0FA9B5415DADC7600D2B54C /* README.txt in Resources */,
 				D0FA9B5515DADC7600D2B54C /* release_notes.txt in Resources */,
+				D0F19BB0161145160042FE50 /* IMG_1786.jpg in Resources */,
+				D0F19BB8161221DC0042FE50 /* IMG_1788.jpg in Resources */,
+				D0F19BB9161221DC0042FE50 /* IMG_1789.jpg in Resources */,
+				D0F19BBA161221DC0042FE50 /* IMG_1790.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
